@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shinerweb.come web push notification</title>
+</head>
+
+<body>
+    <h2>Firebase Web Push Notification by <a href="https://shinerweb.com/">shinerweb.com</a></h2>
+
+    <p id="token"></p>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js"></script>
+    <script>
+              const firebaseConfig = {
+          apiKey: "AIzaSyDRnMF28BcaQzYuDjJBegVOQrk6bRIYdGA",
+          authDomain: "websnotification.firebaseapp.com",
+          projectId: "websnotification",
+          storageBucket: "websnotification.appspot.com",
+          messagingSenderId: "1623252486",
+          appId: "1:1623252486:web:98d0a422f161b0bb78ad87",
+          measurementId: "G-J8MCYJS60L"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const messaging = firebase.messaging();
+
+console.log("messaging", messaging.getToken().then((res) => res))
+
+
+        function IntitalizeFireBaseMessaging() {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("/firebase-messaging-sw.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered with scope:", registration.scope);
+                    })
+                    .catch((error) => {
+                        console.error("Service Worker registration failed:", error);
+                    });
+            }
+            messaging
+                .requestPermission()
+                .then(function () {
+                    console.log("Notification Permission");
+                    return messaging.getToken();
+                })
+                .then(function (token) {
+                    console.log("Token : " + token);
+                    document.getElementById("token").innerHTML = token;
+                })
+                .catch(function (reason) {
+                    console.log(reason);
+                });
+        }
+
+        messaging.onMessage(function (payload) {
+            console.log(payload);
+            const notificationOption = {
+                body: payload.notification.body || "types" ,
+                icon: payload.notification.icon || '123.jpg'
+            };
+
+            if (Notification.permission === "granted") {
+                var notification = new Notification(payload.notification.title, notificationOption);
+
+                notification.onclick = function (ev) {
+                    ev.preventDefault();
+                    window.open(payload.notification.click_action, '_blank');
+                    notification.close();
+                }
+            }
+
+        });
+        messaging.onTokenRefresh(function () {
+            messaging.getToken()
+                .then(function (newtoken) {
+                    console.log("New Token : " + newtoken);
+                })
+                .catch(function (reason) {
+                    console.log(reason);
+                    //alert(reason);
+                })
+        })
+        IntitalizeFireBaseMessaging();
+    </script>
+</body>
+
+</html>

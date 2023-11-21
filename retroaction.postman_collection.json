@@ -1,0 +1,2538 @@
+{
+	"info": {
+		"_postman_id": "a7abd4a0-3bde-46da-85d9-87a275d54067",
+		"name": "retroaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29811451"
+	},
+	"item": [
+		{
+			"name": "subscription",
+			"item": [
+				{
+					"name": "Check Subscription Limit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1}}/getusersub?id=64e69626933c848ef8a2fd18",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"getusersub"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "64e69626933c848ef8a2fd18"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Check Subscription Limit",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{1}}/getusersub?id=64e69626933c848ef8a2fd18",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"getusersub"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "64e69626933c848ef8a2fd18"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "440"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b8-C4CRqCCvcUpxlr6KzmjKQArWxKg\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Sep 2023 14:42:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": [\n        {\n            \"_id\": \"64f73bf4194c7a6a66dc4226\",\n            \"user\": \"64e69626933c848ef8a2fd18\",\n            \"subscription\": \"hsdfhsdfjsdfiusbfjdf\",\n            \"startsAt\": \"4-05-2023\",\n            \"expiresAt\": \"4-06-2023\",\n            \"price\": 10,\n            \"__v\": 0,\n            \"id\": \"64f73bf4194c7a6a66dc4226\"\n        },\n        {\n            \"_id\": \"64f73e47bd41731c47d451a4\",\n            \"user\": \"64e69626933c848ef8a2fd18\",\n            \"subscription\": \"hsdfhsdfjsdfiusbfjdf\",\n            \"startsAt\": \"2023-09-05\",\n            \"expiresAt\": \"2023-10-05\",\n            \"price\": 10,\n            \"__v\": 0,\n            \"id\": \"64f73e47bd41731c47d451a4\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "User Subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"user\":\"652093d44d5cca3d2487d3f7\",\r\n    \"subscription\":\"hsdfhsdfjsdfiusbfjdf\",\r\n    \"startsAt\":\"2023-10-03\",\r\n    \"expiresAt\":\"2023-11-15\",\r\n    \"price\":10\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/createusersub",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"createusersub"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Subscription",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"user\":\"64e69626933c848ef8a2fd18\",\r\n    \"subscription\":\"hsdfhsdfjsdfiusbfjdf\",\r\n    \"startsAt\":\"2023-09-05\",\r\n    \"expiresAt\":\"2023-10-05\",\r\n    \"price\":10\r\n\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/createusersub",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"createusersub"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "233"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e9-UnZwVgd3yZSd9Hbktrtk2Qzmpzs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Sep 2023 14:42:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": {\n        \"user\": \"64e69626933c848ef8a2fd18\",\n        \"subscription\": \"hsdfhsdfjsdfiusbfjdf\",\n        \"startsAt\": \"2023-09-05\",\n        \"expiresAt\": \"2023-10-05\",\n        \"price\": 10,\n        \"_id\": \"64f73e47bd41731c47d451a4\",\n        \"__v\": 0,\n        \"id\": \"64f73e47bd41731c47d451a4\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"User 123\",\r\n    \"userEmail\": \"kresha@yopmail.com\",\r\n    \"userPassword\": \"123456\",\r\n    \"userStreet\": \"Canada\",\r\n    \"userLastOnline\":\"test\",\r\n    \"userSaveRestaurant\":\"test\",\r\n    \"userGender\":\"test\",\r\n    \"userInterest\":\"test\",\r\n    \"usernotInterest\":\"test\",\r\n    \"userReview\":\"test\",\r\n    \"userCountry\":\"test\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/createuser",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"createuser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"johndoe@example.com\",\r\n  \"password\": \"password123\",\r\n  \"country\":\"USA\",\r\n  \"gender\": \"male\",  \r\n  \"like\": [\"6470e498c6a20d0d1e62a71d\", \"6470e494c6a20d0d1e62a71b\"], \r\n  \"disLike\": [\"6470e490c6a20d0d1e62a719\",\"6470e48bc6a20d0d1e62a717\"]\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/register",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "656"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"290-TUbTs97ZvCjlCPFi0C7Xj4raTaE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 May 2023 12:05:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@example.com\",\n        \"password\": \"$2b$10$IqPTHNhXx.gB6dC0yWCBbOizUKwYvoSWQZqeOHLSUcwSnoly0BAWC\",\n        \"userType\": \"user\",\n        \"image\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\",\n        \"saveRestaurant\": [],\n        \"subscription\": null,\n        \"gender\": \"male\",\n        \"country\": \"USA\",\n        \"like\": [\n            \"6470e498c6a20d0d1e62a71d\",\n            \"6470e494c6a20d0d1e62a71b\"\n        ],\n        \"disLike\": [\n            \"6470e490c6a20d0d1e62a719\",\n            \"6470e48bc6a20d0d1e62a717\"\n        ],\n        \"userReview\": [],\n        \"isDeleted\": false,\n        \"_id\": \"647494ffb129c626c45e41d5\",\n        \"createdAt\": \"2023-05-29T12:05:19.638Z\",\n        \"updatedAt\": \"2023-05-29T12:05:19.638Z\",\n        \"__v\": 0,\n        \"id\": \"647494ffb129c626c45e41d5\"\n    },\n    \"message\": \"User registered successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "social login with google",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceToken\": \"fp7pYI24S0uNOLadw6kUg1:APA91bEbcgDxwD_TL8_fiq35tPGFfqSQPipCJyh2Yerb9Q1RdAVy4C7GeVF9ZJkPjOFYFL-HdEJ2QSOY2Xgm6Cw2IRsKaDKDvF0tEabGAuvYLjVKvip6zqe4Q65bmtQ7RA3gH4EKEkM5\",\r\n    \"deviceType\": \"android\",\r\n    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjgyMjgzOGMxYzhiZjllZGNmMWY1MDUwNjYyZTU0YmNiMWFkYjViNWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyNTc5ODY3OTcwNTktYjR1MXE0bWg3cHRyYmpidWYyc2wzdWZycG8wbWJhZDcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyNTc5ODY3OTcwNTktNWV0aDNkcTU2MWt2N2VhZmc0cjljOW9la3ZpOTJrcGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDIxNjMyOTg2NzQ0NzY4MDIxMDUiLCJlbWFpbCI6ImRhdmlkY29vcGVyanBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJEYXZpZCBDb29wZXIiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUdObXl4Wm9kWTU4ZkNpR3lTY2VkOEpldXNSdEh1NUtuS3piSy1HRkJUSUI9czk2LWMiLCJnaXZlbl9uYW1lIjoiRGF2aWQiLCJmYW1pbHlfbmFtZSI6IkNvb3BlciIsImxvY2FsZSI6ImVuIiwiaWF0IjoxNjg0MTUxODAyLCJleHAiOjE2ODQxNTU0MDJ9.E2ddyI3Qgg3ftMmF2ihP1E4HDUSVBlebXQBMtU_wu7tt6Z0Qq1rTgkSrOWSzc_Rq52nmHji7kcijWGojW0BAmLPPWa8tl6vuGE5P8_v_3WFpidy3Hp5Inl_8usCg3pcAc5gVb-V8iMipsIbQMJaa8apZfAo693HyP58pepDFXrDllDfnwfyZ3pDr4-hpw_ueHwaBA9-FF0YalhPROvJpsAgszcimwC8mqeonmuFIZqMjD6QjLDSHtxISl55XKWIzXLb-Yx4GIyO-zdZ9iisMnK3Ij21BCI2vriqfdVpv4QwVJEc0hGMyroPYaSTdWccsCDbQXuZrCaNSyxiSGazeAw\",\r\n    \"socialType\": \"google\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/socialregister",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"socialregister"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "social login with facebook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceToken\":  \"fp7pYI24S0uNOLadw6kUg1:APA91bEbcgDxwD_TL8_fiq35tPGFfqSQPipCJyh2Yerb9Q1RdAVy4C7GeVF9ZJkPjOFYFL-HdEJ2QSOY2Xgm6Cw2IRsKaDKDvF0tEabGAuvYLjVKvip6zqe4Q65bmtQ7RA3gH4EKEkM5\",\r\n    \"deviceType\": \"android\",\r\n    \"accessToken\": {\"name\":\"user123\",\"email\":\"user123@gmail.com\"},\r\n    \"socialType\": \"facebook\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/socialregister",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"socialregister"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "social login with facebook",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"deviceToken\":  \"fp7pYI24S0uNOLadw6kUg1:APA91bEbcgDxwD_TL8_fiq35tPGFfqSQPipCJyh2Yerb9Q1RdAVy4C7GeVF9ZJkPjOFYFL-HdEJ2QSOY2Xgm6Cw2IRsKaDKDvF0tEabGAuvYLjVKvip6zqe4Q65bmtQ7RA3gH4EKEkM5\",\r\n    \"deviceType\": \"android\",\r\n    \"accessToken\": {\"name\":\"user123\",\"email\":\"user123@gmail.com\"},\r\n    \"socialType\": \"facebook\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/socialregister",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"socialregister"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4db-n0KBgPkAXj9SUTJepe8qZlqdTxY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 May 2023 12:20:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"login successfully\",\n    \"data\": {\n        \"_id\": \"647494ffb129c626c45e41d5\",\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@example.com\",\n        \"password\": \"$2b$10$IqPTHNhXx.gB6dC0yWCBbOizUKwYvoSWQZqeOHLSUcwSnoly0BAWC\",\n        \"userType\": \"user\",\n        \"image\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\",\n        \"saveRestaurant\": [],\n        \"subscription\": null,\n        \"gender\": \"male\",\n        \"country\": \"USA\",\n        \"like\": [\n            {\n                \"_id\": \"6470e498c6a20d0d1e62a71d\",\n                \"title\": \"Asian Cuisine\",\n                \"createdAt\": \"2023-05-26T16:55:52.714Z\",\n                \"updatedAt\": \"2023-05-26T16:55:52.714Z\",\n                \"__v\": 0,\n                \"id\": \"6470e498c6a20d0d1e62a71d\"\n            },\n            {\n                \"_id\": \"6470e494c6a20d0d1e62a71b\",\n                \"title\": \"Italian Cuisine\",\n                \"createdAt\": \"2023-05-26T16:55:48.205Z\",\n                \"updatedAt\": \"2023-05-26T16:55:48.205Z\",\n                \"__v\": 0,\n                \"id\": \"6470e494c6a20d0d1e62a71b\"\n            }\n        ],\n        \"disLike\": [\n            {\n                \"_id\": \"6470e490c6a20d0d1e62a719\",\n                \"title\": \"BBQ\",\n                \"createdAt\": \"2023-05-26T16:55:44.285Z\",\n                \"updatedAt\": \"2023-05-26T16:55:44.285Z\",\n                \"__v\": 0,\n                \"id\": \"6470e490c6a20d0d1e62a719\"\n            },\n            {\n                \"_id\": \"6470e48bc6a20d0d1e62a717\",\n                \"title\": \"Tapas/Small Plates\",\n                \"createdAt\": \"2023-05-26T16:55:39.470Z\",\n                \"updatedAt\": \"2023-05-26T16:55:39.470Z\",\n                \"__v\": 0,\n                \"id\": \"6470e48bc6a20d0d1e62a717\"\n            }\n        ],\n        \"userReview\": [],\n        \"isDeleted\": false,\n        \"createdAt\": \"2023-05-29T12:05:19.638Z\",\n        \"updatedAt\": \"2023-05-29T12:05:19.638Z\",\n        \"__v\": 0,\n        \"id\": \"647494ffb129c626c45e41d5\"\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "delete user by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.1.45:3000/api/v1/deleteuserbyid/6450fffb910a79773906e305",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"1",
+								"45"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"deleteuserbyid",
+								"6450fffb910a79773906e305"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"userEmail\":\"davidcooperjp@gmail.com\",\r\n    \"userPassword\": \"retroadmin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/login",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"johndoe@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/login",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4db-n0KBgPkAXj9SUTJepe8qZlqdTxY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 May 2023 12:05:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"login successfully\",\n    \"data\": {\n        \"_id\": \"647494ffb129c626c45e41d5\",\n        \"name\": \"John Doe\",\n        \"email\": \"johndoe@example.com\",\n        \"password\": \"$2b$10$IqPTHNhXx.gB6dC0yWCBbOizUKwYvoSWQZqeOHLSUcwSnoly0BAWC\",\n        \"userType\": \"user\",\n        \"image\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\",\n        \"saveRestaurant\": [],\n        \"subscription\": null,\n        \"gender\": \"male\",\n        \"country\": \"USA\",\n        \"like\": [\n            {\n                \"_id\": \"6470e498c6a20d0d1e62a71d\",\n                \"title\": \"Asian Cuisine\",\n                \"createdAt\": \"2023-05-26T16:55:52.714Z\",\n                \"updatedAt\": \"2023-05-26T16:55:52.714Z\",\n                \"__v\": 0,\n                \"id\": \"6470e498c6a20d0d1e62a71d\"\n            },\n            {\n                \"_id\": \"6470e494c6a20d0d1e62a71b\",\n                \"title\": \"Italian Cuisine\",\n                \"createdAt\": \"2023-05-26T16:55:48.205Z\",\n                \"updatedAt\": \"2023-05-26T16:55:48.205Z\",\n                \"__v\": 0,\n                \"id\": \"6470e494c6a20d0d1e62a71b\"\n            }\n        ],\n        \"disLike\": [\n            {\n                \"_id\": \"6470e490c6a20d0d1e62a719\",\n                \"title\": \"BBQ\",\n                \"createdAt\": \"2023-05-26T16:55:44.285Z\",\n                \"updatedAt\": \"2023-05-26T16:55:44.285Z\",\n                \"__v\": 0,\n                \"id\": \"6470e490c6a20d0d1e62a719\"\n            },\n            {\n                \"_id\": \"6470e48bc6a20d0d1e62a717\",\n                \"title\": \"Tapas/Small Plates\",\n                \"createdAt\": \"2023-05-26T16:55:39.470Z\",\n                \"updatedAt\": \"2023-05-26T16:55:39.470Z\",\n                \"__v\": 0,\n                \"id\": \"6470e48bc6a20d0d1e62a717\"\n            }\n        ],\n        \"userReview\": [],\n        \"isDeleted\": false,\n        \"createdAt\": \"2023-05-29T12:05:19.638Z\",\n        \"updatedAt\": \"2023-05-29T12:05:19.638Z\",\n        \"__v\": 0,\n        \"id\": \"647494ffb129c626c45e41d5\"\n    },\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{2}}/getinterest",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"getinterest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"davidcooperjp@gmail.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{2}}/forget-password",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"forget-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "forget password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"user123@yopmail.com\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/forgetpassword",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"forgetpassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-fPTKTq6nReH5ThMlSMrSHd6cUgI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 May 2023 12:53:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"OTP sended to your email address\",\n    \"success\": true,\n    \"code\": 77630\n}"
+						}
+					]
+				},
+				{
+					"name": "verify otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"davidcooperjp@gmail.com\",\r\n    \"userOtp\":\"18486\",\r\n    \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvdHAiOjE4NDg2LCJlbWFpbCI6ImRhdmlkY29vcGVyanBAZ21haWwuY29tIiwiaWF0IjoxNjkzOTI3NDczfQ.SQiLLvbKuvVFkiIaNzrAHXE0e1JRmCGur0tQB-8At-k\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/verifyotp",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"verifyotp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"user123@yopmail.com\",\r\n    \"otp\":\"77630\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/verifyotp",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"verifyotp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "706"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c2-DETX1IcF/igSBgfowLKvGCphLk0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 May 2023 13:38:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"OTP Verify Successfully\",\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"64749f4d2f981e33ba42b651\",\n        \"name\": \"User 123\",\n        \"email\": \"user123@yopmail.com\",\n        \"password\": \"$2b$10$rX6FAGAcEjHnfAiBhYMaku5YvPBzhNhaNK0uJqbTRt1cH2bhpouce\",\n        \"userType\": \"user\",\n        \"image\": \"https://cdn-icons-png.flaticon.com/512/149/149071.png\",\n        \"saveRestaurant\": [],\n        \"subscription\": null,\n        \"gender\": \"male\",\n        \"country\": \"Canada\",\n        \"like\": [\n            \"6470e490c6a20d0d1e62a719\",\n            \"6470e48bc6a20d0d1e62a717\"\n        ],\n        \"disLike\": [\n            \"6470e498c6a20d0d1e62a71d\",\n            \"6470e494c6a20d0d1e62a71b\"\n        ],\n        \"userReview\": [],\n        \"isDeleted\": false,\n        \"createdAt\": \"2023-05-29T12:49:17.418Z\",\n        \"updatedAt\": \"2023-05-29T12:53:02.875Z\",\n        \"__v\": 0,\n        \"expireAt\": \"2023-05-29T13:53:02.874Z\",\n        \"otp\": \"77630\",\n        \"id\": \"64749f4d2f981e33ba42b651\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{2}}/getuserbyid/64f772bec6ee88e7d16e588f",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"getuserbyid",
+								"64f772bec6ee88e7d16e588f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "review",
+			"item": [
+				{
+					"name": "Count Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Views by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/api/v1/getreviewsbyid/631bf6c59a05a663fc3f526a",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"v1",
+								"getreviewsbyid",
+								"631bf6c59a05a663fc3f526a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create reviews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userreviews\": \"Test review\",\r\n  \"userrating\":4,\r\n  \"restaurantid\": \"64d2685617daf7590e9d6968\", // ObjectId of a restaurant document\r\n  \"userid\": \"64e397aaeb55eea1ec94afc4\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{2}}/createreviews",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"createreviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Review by USERID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{2}}/getreviewsbyid/64da4feac546380012c55569",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"getreviewsbyid",
+								"64da4feac546380012c55569"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "restaurant",
+			"item": [
+				{
+					"name": "Get Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{2}}/getRestaurants",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"getRestaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Restaurants by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1}}/user/getRestaurants?id=64f772bec6ee88e7d16e588f",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"user",
+								"getRestaurants"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "64f772bec6ee88e7d16e588f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Restaurants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "multipart/form-data",
+								"type": "text"
+							},
+							{
+								"key": "Access-Control-Request-Method",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "restaurantImage",
+									"type": "file",
+									"src": "/C:/Users/Abdul.Basit/Downloads/pexels-robi-pastores-3714786.jpg"
+								},
+								{
+									"key": "restaurantEmail",
+									"value": "McDonald’s@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "restaurantName",
+									"value": "McDonald’s ",
+									"type": "text"
+								},
+								{
+									"key": "restaurantDescription",
+									"value": "McDonald’s did something it hadn’t done for eight years in 2022: Add new locations in its biggest market.\n\nThe Chicago-based burger giant finished the year with 13,444 restaurants in the U.S., or six more than it had at the end of 2021. The company hadn’t done that since 2014.",
+									"type": "text"
+								},
+								{
+									"key": "restaurantStreet",
+									"value": "US",
+									"type": "text"
+								},
+								{
+									"key": "restaurantRating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "restaurantReviews",
+									"value": "Best Restaurant",
+									"type": "text"
+								},
+								{
+									"key": "restaurantCountry",
+									"value": "64b98810983b1c3b7a352b2e",
+									"type": "text"
+								},
+								{
+									"key": "restaurantCity",
+									"value": "city",
+									"type": "text"
+								},
+								{
+									"key": "restaurantZip",
+									"value": "zip",
+									"type": "text"
+								},
+								{
+									"key": "restaurantPassword",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{1}}/registerRestaurants",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"registerRestaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get rest by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1}}/getRestaurantsbyid/64da57605501af864182f2f9",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"getRestaurantsbyid",
+								"64da57605501af864182f2f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Restaurants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantEmail\": \"McDonald’s@hotmail.com\",\r\n    \"restaurantPassword\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/loginrestaurant",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"loginrestaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Restaurant",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurantInterest\": [\r\n        \"64e4ae3b6b78575a37cf3659\",\r\n        \"64e4ae426b78575a37cf365b\",\r\n        \"64e4ae4a6b78575a37cf365d\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/updateRestaurants/6511510cc9dbd12825d57781",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"updateRestaurants",
+								"6511510cc9dbd12825d57781"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Restaurant",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurantInterest\": [\r\n        \"64e4ae3b6b78575a37cf3659\",\r\n        \"64e4ae426b78575a37cf365b\",\r\n        \"64e4ae4a6b78575a37cf365d\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/updateRestaurants/6511510cc9dbd12825d57781",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"updateRestaurants",
+										"6511510cc9dbd12825d57781"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "914"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"392-hlfHuJVI9qkWRawcUamibMr6Fx8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 25 Sep 2023 13:39:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"6511510cc9dbd12825d57781\",\n        \"restaurantName\": \"McDonald’s \",\n        \"restaurantDescription\": \"McDonald’s did something it hadn’t done for eight years in 2022: Add new locations in its biggest market.\\n\\nThe Chicago-based burger giant finished the year with 13,444 restaurants in the U.S., or six more than it had at the end of 2021. The company hadn’t done that since 2014.\",\n        \"restaurantStreet\": \"US\",\n        \"restaurantCountry\": \"64b98810983b1c3b7a352b2e\",\n        \"restaurantCity\": \"city\",\n        \"restaurantZip\": \"zip\",\n        \"restaurantEmail\": \"McDonald’s@hotmail.com\",\n        \"restaurantPassword\": \"123\",\n        \"restaurantImage\": \"http://localhost:3003/public/uploads/pexels-robi-pastores-3714786.jpg-1695633676005.jpeg\",\n        \"status\": \"rejected\",\n        \"restaurantCreatedOn\": \"2023-09-25T09:21:16.261Z\",\n        \"__v\": 0,\n        \"restaurantInterest\": [\n            \"64e4ae3b6b78575a37cf3659\",\n            \"64e4ae426b78575a37cf365b\",\n            \"64e4ae4a6b78575a37cf365d\"\n        ],\n        \"id\": \"6511510cc9dbd12825d57781\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create promoCodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"promo_code_discount\" : 100,\r\n    \"promo_code_limit\" : 10,\r\n    \"promo_code_validity\" : \"2023-10-16T17:22\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/createpromo_code/651fcbd27e4038d8e2bf5f13",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"createpromo_code",
+								"651fcbd27e4038d8e2bf5f13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "use promo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"usedBy\" : [\"652093d44d5cca3d2487d3f7\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{1}}/user-promo/652d31b344a6da13a9c8ef50",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"user-promo",
+								"652d31b344a6da13a9c8ef50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all promo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{1}}/promo-user-detail",
+							"host": [
+								"{{1}}"
+							],
+							"path": [
+								"promo-user-detail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "send notification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"test\",\r\n    \"subtitile\":\"test test\",\r\n    \"userid\":[\"64e69626933c848ef8a2fd18\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{2}}/createnotification",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"createnotification"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "announcements",
+			"item": [
+				{
+					"name": "create announcement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"announcementName\": \"Announcement name\",\r\n    \"announcementDescription\": \"Announcement description\",\r\n    \"announcementCountry\": \"Announcement country\",\r\n    \"announcementCity\": \"Announcement city\",\r\n    \"announcementStreet\": \"Announcement street\",\r\n    \"announcementRestaurants\": \"64c91808c1913813406313c7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{2}}/createannouncements",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"createannouncements"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "interest",
+					"item": [
+						{
+							"name": "add interest",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"interestName\":\"Table Tennis\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{2}}/createinterest",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"createinterest"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\":\"Live Music\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/interest",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"interest"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "197"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c5-FazSuPwEM3MOi5nIwzHTOASf0JU\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 26 May 2023 15:06:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"Live Music\",\n        \"_id\": \"6470cb03a689c1484ad1f7a4\",\n        \"createdAt\": \"2023-05-26T15:06:43.350Z\",\n        \"updatedAt\": \"2023-05-26T15:06:43.350Z\",\n        \"__v\": 0,\n        \"id\": \"6470cb03a689c1484ad1f7a4\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "get interest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/getinterest",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"getinterest"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{1}}/interest",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"interest"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "199"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c7-30sXDcdvrqPdXtTJka1XtnfsQfA\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 26 May 2023 15:06:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"6470cb03a689c1484ad1f7a4\",\n            \"title\": \"Live Music\",\n            \"createdAt\": \"2023-05-26T15:06:43.350Z\",\n            \"updatedAt\": \"2023-05-26T15:06:43.350Z\",\n            \"__v\": 0,\n            \"id\": \"6470cb03a689c1484ad1f7a4\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "update interest",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\":\"Nothing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/interest/6470c9c4c221c303fced9467",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"interest",
+										"6470c9c4c221c303fced9467"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"title\":\"Nothing\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/interest/6470c9c4c221c303fced9467",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"interest",
+												"6470c9c4c221c303fced9467"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "194"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c2-sF6NAXD0vPgQpUly6JRiWY75HP0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 26 May 2023 15:03:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"6470c9c4c221c303fced9467\",\n        \"title\": \"Nothing\",\n        \"createdAt\": \"2023-05-26T15:01:24.181Z\",\n        \"updatedAt\": \"2023-05-26T15:03:35.922Z\",\n        \"__v\": 0,\n        \"id\": \"6470c9c4c221c303fced9467\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete interest",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/deleteinterestbyid/64e4ae326b78575a37cf3657",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"deleteinterestbyid",
+										"64e4ae326b78575a37cf3657"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{1}}/interest/6470c9c4c221c303fced9467",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"interest",
+												"6470c9c4c221c303fced9467"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "194"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"c2-sF6NAXD0vPgQpUly6JRiWY75HP0\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 26 May 2023 15:03:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"6470c9c4c221c303fced9467\",\n        \"title\": \"Nothing\",\n        \"createdAt\": \"2023-05-26T15:01:24.181Z\",\n        \"updatedAt\": \"2023-05-26T15:03:35.922Z\",\n        \"__v\": 0,\n        \"id\": \"6470c9c4c221c303fced9467\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "terms and condition",
+					"item": [
+						{
+							"name": "get terms",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/terms",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"terms"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get terms",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{1}}/terms",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"terms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "785"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"311-kYt3y012VtMhWJ5ed2XOHcFkFXU\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 08 Aug 2023 15:02:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"succes\": true,\n    \"message\": [\n        {\n            \"_id\": \"6470e3b0cf7ea47c8a0b389d\",\n            \"termsandconditions\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"createdAt\": \"2023-05-26T16:52:00.017Z\",\n            \"updatedAt\": \"2023-05-26T16:54:17.839Z\",\n            \"__v\": 0,\n            \"createdOn\": \"2023-08-08T15:02:10.458Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "create terms",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"termsandconditions\": \"Lorem\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/terms",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"terms"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get terms",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{1}}/terms",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"terms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "785"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"311-kYt3y012VtMhWJ5ed2XOHcFkFXU\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 08 Aug 2023 15:02:10 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"succes\": true,\n    \"message\": [\n        {\n            \"_id\": \"6470e3b0cf7ea47c8a0b389d\",\n            \"termsandconditions\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n            \"createdAt\": \"2023-05-26T16:52:00.017Z\",\n            \"updatedAt\": \"2023-05-26T16:54:17.839Z\",\n            \"__v\": 0,\n            \"createdOn\": \"2023-08-08T15:02:10.458Z\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "update terms",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"termsandconditions\": \"Lorem\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/terms/6470e3b0cf7ea47c8a0b389d",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"terms",
+										"6470e3b0cf7ea47c8a0b389d"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"termsandconditions\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/terms/6470e3b0cf7ea47c8a0b389d",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"terms",
+												"6470e3b0cf7ea47c8a0b389d"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "69"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"45-2lsZ6xWn7dbCtvIRZjpEEuW9E4o\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 26 May 2023 16:54:19 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Terms And Condition updated successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "privacy",
+					"item": [
+						{
+							"name": "get privacy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/privacy",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"privacy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get privacy",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{1}}/privacy",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"privacy"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"81-YDKYSSIZO1wdtkQcJYdHCHH1f3g\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 08 Aug 2023 15:25:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"64d25e7aaf670222173a2115\",\n        \"privacypolicy\": \"Lorem\",\n        \"createdOn\": \"2023-08-08T15:25:46.942Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "create privacy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"privacypolicy\": \"Lorem\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/privacy",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"privacy"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create privacy",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"privacypolicy\": \"Lorem\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/privacy",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"privacy"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "129"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"81-p5AtUUWl9LQ5IK5EI6Wz9P5Qw14\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 08 Aug 2023 15:25:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"data\": {\n        \"privacypolicy\": \"Lorem\",\n        \"_id\": \"64d25e7aaf670222173a2115\",\n        \"createdOn\": \"2023-08-08T15:25:46.942Z\",\n        \"__v\": 0\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update terms",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"privacypolicy\": \"Lorem epsum\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/privacy/64d25e7aaf670222173a2115",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"privacy",
+										"64d25e7aaf670222173a2115"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update privacy",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"privacypolicy\": \"Lorem epsum\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/privacy/64d25e7aaf670222173a2115",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"privacy",
+												"64d25e7aaf670222173a2115"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"39-fZzli3YuaW9e0rIhGEqUg05s4uo\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 08 Aug 2023 15:26:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"privacy updated successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "gender",
+					"item": [
+						{
+							"name": "get gender",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/getgender",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"getgender"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userGender\":\"Female\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{2}}/creategender",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"creategender"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/updategenderbyid/",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"updategenderbyid",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/deletegenderbyid/",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"deletegenderbyid",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "country",
+					"item": [
+						{
+							"name": "get country",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/getcountry",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"getcountry"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create country",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userCountry\":\"Female\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{2}}/createcountry",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"createcountry"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/updategenderbyid/",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"updategenderbyid",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{2}}/deletegenderbyid/",
+									"host": [
+										"{{2}}"
+									],
+									"path": [
+										"deletegenderbyid",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Requests",
+					"item": [
+						{
+							"name": "Accept Request",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurantId\": \"6511510cc9dbd12825d57781\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/acceptRequest/64f0fcd98d8449f01ad84526",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"acceptRequest",
+										"64f0fcd98d8449f01ad84526"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Accept Request",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"restaurantId\": \"6511510cc9dbd12825d57781\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/acceptRequest/64f0fcd98d8449f01ad84526",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"acceptRequest",
+												"64f0fcd98d8449f01ad84526"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "811"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"32b-3FuGxlVDeVNk+Cm5kCgjeiQrFu8\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 13:13:12 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"data\": {\n        \"_id\": \"6511510cc9dbd12825d57781\",\n        \"restaurantName\": \"McDonald’s \",\n        \"restaurantDescription\": \"McDonald’s did something it hadn’t done for eight years in 2022: Add new locations in its biggest market.\\n\\nThe Chicago-based burger giant finished the year with 13,444 restaurants in the U.S., or six more than it had at the end of 2021. The company hadn’t done that since 2014.\",\n        \"restaurantStreet\": \"US\",\n        \"restaurantCountry\": \"64b98810983b1c3b7a352b2e\",\n        \"restaurantCity\": \"city\",\n        \"restaurantZip\": \"zip\",\n        \"restaurantEmail\": \"McDonald’s@hotmail.com\",\n        \"restaurantPassword\": \"123\",\n        \"restaurantImage\": \"http://localhost:3003/public/uploads/pexels-robi-pastores-3714786.jpg-1695633676005.jpeg\",\n        \"status\": \"approved\",\n        \"restaurantCreatedOn\": \"2023-09-25T09:21:16.261Z\",\n        \"__v\": 0,\n        \"id\": \"6511510cc9dbd12825d57781\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Reject Request",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurantId\": \"6511510cc9dbd12825d57781\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{1}}/rejectRequest/64f0fcd98d8449f01ad84526",
+									"host": [
+										"{{1}}"
+									],
+									"path": [
+										"rejectRequest",
+										"64f0fcd98d8449f01ad84526"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Reject Request",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"restaurantId\": \"6511510cc9dbd12825d57781\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{1}}/rejectRequest/64f0fcd98d8449f01ad84526",
+											"host": [
+												"{{1}}"
+											],
+											"path": [
+												"rejectRequest",
+												"64f0fcd98d8449f01ad84526"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "811"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"32b-E8ljfJqiBbdRY2r+iP+yAJ+qq88\""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 25 Sep 2023 13:14:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"data\": {\n        \"_id\": \"6511510cc9dbd12825d57781\",\n        \"restaurantName\": \"McDonald’s \",\n        \"restaurantDescription\": \"McDonald’s did something it hadn’t done for eight years in 2022: Add new locations in its biggest market.\\n\\nThe Chicago-based burger giant finished the year with 13,444 restaurants in the U.S., or six more than it had at the end of 2021. The company hadn’t done that since 2014.\",\n        \"restaurantStreet\": \"US\",\n        \"restaurantCountry\": \"64b98810983b1c3b7a352b2e\",\n        \"restaurantCity\": \"city\",\n        \"restaurantZip\": \"zip\",\n        \"restaurantEmail\": \"McDonald’s@hotmail.com\",\n        \"restaurantPassword\": \"123\",\n        \"restaurantImage\": \"http://localhost:3003/public/uploads/pexels-robi-pastores-3714786.jpg-1695633676005.jpeg\",\n        \"status\": \"rejected\",\n        \"restaurantCreatedOn\": \"2023-09-25T09:21:16.261Z\",\n        \"__v\": 0,\n        \"id\": \"6511510cc9dbd12825d57781\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "post gender",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userCountry\": [\r\n        \"Afghanistan\",\r\n        \"Albania\",\r\n        \"Algeria\",\r\n        \"Andorra\",\r\n        \"Angola\",\r\n        \"Antigua & Deps\",\r\n        \"Argentina\",\r\n        \"Armenia\",\r\n        \"Australia\",\r\n        \"Austria\",\r\n        \"Azerbaijan\",\r\n        \"Bahamas\",\r\n        \"Bahrain\",\r\n        \"Bangladesh\",\r\n        \"Barbados\",\r\n        \"Belarus\",\r\n        \"Belgium\",\r\n        \"Belize\",\r\n        \"Benin\",\r\n        \"Bhutan\",\r\n        \"Bolivia\",\r\n        \"Bosnia Herzegovina\",\r\n        \"Botswana\",\r\n        \"Brazil\",\r\n        \"Brunei\",\r\n        \"Bulgaria\",\r\n        \"Burkina\",\r\n        \"Burundi\",\r\n        \"Cambodia\",\r\n        \"Cameroon\",\r\n        \"Canada\",\r\n        \"Cape Verde\",\r\n        \"Central African Rep\",\r\n        \"Chad\",\r\n        \"Chile\",\r\n        \"China\",\r\n        \"Colombia\",\r\n        \"Comoros\",\r\n        \"Congo\",\r\n        \"Congo {Democratic Rep}\",\r\n        \"Costa Rica\",\r\n        \"Croatia\",\r\n        \"Cuba\",\r\n        \"Cyprus\",\r\n        \"Czech Republic\",\r\n        \"Denmark\",\r\n        \"Djibouti\",\r\n        \"Dominica\",\r\n        \"Dominican Republic\",\r\n        \"East Timor\",\r\n        \"Ecuador\",\r\n        \"Egypt\",\r\n        \"El Salvador\",\r\n        \"Equatorial Guinea\",\r\n        \"Eritrea\",\r\n        \"Estonia\",\r\n        \"Ethiopia\",\r\n        \"Fiji\",\r\n        \"Finland\",\r\n        \"France\",\r\n        \"Gabon\",\r\n        \"Gambia\",\r\n        \"Georgia\",\r\n        \"Germany\",\r\n        \"Ghana\",\r\n        \"Greece\",\r\n        \"Grenada\",\r\n        \"Guatemala\",\r\n        \"Guinea\",\r\n        \"Guinea-Bissau\",\r\n        \"Guyana\",\r\n        \"Haiti\",\r\n        \"Honduras\",\r\n        \"Hungary\",\r\n        \"Iceland\",\r\n        \"India\",\r\n        \"Indonesia\",\r\n        \"Iran\",\r\n        \"Iraq\",\r\n        \"Ireland {Republic}\",\r\n        \"Israel\",\r\n        \"Italy\",\r\n        \"Ivory Coast\",\r\n        \"Jamaica\",\r\n        \"Japan\",\r\n        \"Jordan\",\r\n        \"Kazakhstan\",\r\n        \"Kenya\",\r\n        \"Kiribati\",\r\n        \"Korea North\",\r\n        \"Korea South\",\r\n        \"Kosovo\",\r\n        \"Kuwait\",\r\n        \"Kyrgyzstan\",\r\n        \"Laos\",\r\n        \"Latvia\",\r\n        \"Lebanon\",\r\n        \"Lesotho\",\r\n        \"Liberia\",\r\n        \"Libya\",\r\n        \"Liechtenstein\",\r\n        \"Lithuania\",\r\n        \"Luxembourg\",\r\n        \"Macedonia\",\r\n        \"Madagascar\",\r\n        \"Malawi\",\r\n        \"Malaysia\",\r\n        \"Maldives\",\r\n        \"Mali\",\r\n        \"Malta\",\r\n        \"Marshall Islands\",\r\n        \"Mauritania\",\r\n        \"Mauritius\",\r\n        \"Mexico\",\r\n        \"Micronesia\",\r\n        \"Moldova\",\r\n        \"Monaco\",\r\n        \"Mongolia\",\r\n        \"Montenegro\",\r\n        \"Morocco\",\r\n        \"Mozambique\",\r\n        \"Myanmar, {Burma}\",\r\n        \"Namibia\",\r\n        \"Nauru\",\r\n        \"Nepal\",\r\n        \"Netherlands\",\r\n        \"New Zealand\",\r\n        \"Nicaragua\",\r\n        \"Niger\",\r\n        \"Nigeria\",\r\n        \"Norway\",\r\n        \"Oman\",\r\n        \"Pakistan\",\r\n        \"Palau\",\r\n        \"Panama\",\r\n        \"Papua New Guinea\",\r\n        \"Paraguay\",\r\n        \"Peru\",\r\n        \"Philippines\",\r\n        \"Poland\",\r\n        \"Portugal\",\r\n        \"Qatar\",\r\n        \"Romania\",\r\n        \"Russian Federation\",\r\n        \"Rwanda\",\r\n        \"St Kitts & Nevis\",\r\n        \"St Lucia\",\r\n        \"Saint Vincent & the Grenadines\",\r\n        \"Samoa\",\r\n        \"San Marino\",\r\n        \"Sao Tome & Principe\",\r\n        \"Saudi Arabia\",\r\n        \"Senegal\",\r\n        \"Serbia\",\r\n        \"Seychelles\",\r\n        \"Sierra Leone\",\r\n        \"Singapore\",\r\n        \"Slovakia\",\r\n        \"Slovenia\",\r\n        \"Solomon Islands\",\r\n        \"Somalia\",\r\n        \"South Africa\",\r\n        \"South Sudan\",\r\n        \"Spain\",\r\n        \"Sri Lanka\",\r\n        \"Sudan\",\r\n        \"Suriname\",\r\n        \"Swaziland\",\r\n        \"Sweden\",\r\n        \"Switzerland\",\r\n        \"Syria\",\r\n        \"Taiwan\",\r\n        \"Tajikistan\",\r\n        \"Tanzania\",\r\n        \"Thailand\",\r\n        \"Togo\",\r\n        \"Tonga\",\r\n        \"Trinidad & Tobago\",\r\n        \"Tunisia\",\r\n        \"Turkey\",\r\n        \"Turkmenistan\",\r\n        \"Tuvalu\",\r\n        \"Uganda\",\r\n        \"Ukraine\",\r\n        \"United Arab Emirates\",\r\n        \"United Kingdom\",\r\n        \"United States\",\r\n        \"Uruguay\",\r\n        \"Uzbekistan\",\r\n        \"Vanuatu\",\r\n        \"Vatican City\",\r\n        \"Venezuela\",\r\n        \"Vietnam\",\r\n        \"Yemen\",\r\n        \"Zambia\",\r\n        \"Zimbabwe\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{2}}/getcountry",
+							"host": [
+								"{{2}}"
+							],
+							"path": [
+								"getcountry"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "1",
+			"value": "http://localhost:3003/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "2",
+			"value": "https://retroactionapi.jumppace.com:3003/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "local",
+			"value": "http://localhost:3003/api/v1"
+		}
+	]
+}
